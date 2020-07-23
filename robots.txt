@@ -3,7 +3,9 @@
 User-agent: *
 Disallow: /media_proxy/
 Disallow: /interact/
-
+Disallow: /web/
+#Allow for introduction page of server
+Allow: /about/
 # Add rules for single user
 Disallow: /@233mc44/
 Disallow: /@233mc44$
