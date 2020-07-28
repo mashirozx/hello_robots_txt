@@ -7,3 +7,5 @@ Disallow: /interact/
 # Add rules for single user
 Disallow: /@233mc44/
 Disallow: /@233mc44$
+Disallow: /@inuoy/
+Disallow: /@inuoy$
