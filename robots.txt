@@ -9,3 +9,5 @@ Disallow: /@233mc44/
 Disallow: /@233mc44$
 Disallow: /@inuoy/
 Disallow: /@inuoy$
+Disallow: /@winslow/
+Disallow: /@winslow$
