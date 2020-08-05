@@ -1,0 +1,46 @@
+name: Compile SCSS
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: 📂 Make destination directory for compiled CSS
+        run: mkdir -vp public/custom/css
+
+      - name: 📃 [1/3]. Compile avatar.css from avatar.scss
+        uses: gha-utilities/sass-build@v0.2.6
+        with:
+          source: custom/scss/avatar.scss
+          destination: public/custom/css/avatar.css
+      
+      - name: 📃 [2/3]. Compile common.css from common.scss
+      uses: gha-utilities/sass-build@v0.2.6
+      with:
+        source: custom/scss/common.scss
+        destination: public/custom/css/common.css
+      
+      - name: 📃 [3/3]. Compile pages.css from pages.scss
+      uses: gha-utilities/sass-build@v0.2.6
+      with:
+        source: custom/scss/pages.scss
+        destination: public/custom/css/pages.css
+
+      - name: 🎭 Prepair files in public path
+        run: cp robots.txt public
+        run: cp -r custom/img public/custom
+
+      - name: 🚀 Deploy on gh-pages branch
+      #uses: JamesIvJamesIves/githubJamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@3.5.7
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: public
