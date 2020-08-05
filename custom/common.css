@@ -100,3 +100,45 @@
   max-height: 2000%;
   max-width: 100%
 }
+
+/*hashtag style*/
+.mention.hashtag.status-link {
+  background-color: #93AEFD36;
+  padding: 0px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-style: dashed;
+  border-color: #93AEFD;
+  border-width: 0.5px;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+.mention.hashtag.status-link:before {
+  content: '\e6a9';
+  font-family: forest;
+  color: #4c7cb4;
+  padding-right: 2px;
+}
+
+.mention.hashtag.status-link:hover {
+  background-color: #cdd2f54f;
+}
+
+/*fix viewbox*/
+div.column {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@media (min-width: 1200px) {
+  .drawer {
+    width: 300px;
+  }
+
+  .column {
+    width: calc((100% - 300px) / 3);
+  }
+}
