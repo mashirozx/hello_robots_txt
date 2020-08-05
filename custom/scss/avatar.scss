@@ -1,40 +1,51 @@
+/*! hello.2heng.xin/gh/custom/avatar.scss | (c) Mashiro and other contributors | Licensed under the AGPL-3.0 License (https://www.gnu.org/licenses/agpl-3.0.html) */
+/*! You can also add your avatar frame for you account easily here: https://github.com/mashirozx/hello_robots_txt/blob/master/custom/scss/avatar.scss */
 @import "avatar_variables.scss";
 
-/* API http://api.bilibili.com/x/space/acc/info?mid=2333 */
+/* Add custom avatar frame for your Mastodon account, see:
+ * 为你的 Mastodon 账号添加一个头像框，请阅读：
+ * https://github.com/mashirozx/hello_robots_txt/blob/master/custom/docs/custom_avatar_frame.md
+ */
 
 $user_config: ("mashiro": ("bili_frame", $bili_frame_010),
-  "sakura": ("cat_ear"),
-  "test": ("cat_ear"),
+  "sakura": ("cat_ears"),
+  "test": ("cat_ears"),
   "github": ("bili_frame", $bili_frame_091));
 
-/*this is a cat account*/
 .notification .status__avatar::before,
 .notification .status__avatar::after {
   display: none !important;
 }
 
-$cat_ear_list: ();
+$cat_ears_list: ();
 
 @each $name,
 $glyph in $user_config {
-  @if nth($glyph, 1)=="cat_ear" {
+  @if nth($glyph, 1)=="cat_ears" {
 
-    $cat_ear_list: append($cat_ear_list, unquote("&[title='#{$name}']"), comma);
+    $cat_ears_list: append($cat_ears_list, unquote("&[title='#{$name}']"), comma);
 
   }
 
   @else if nth($glyph, 1)=="bili_frame" {
 
-    .status__wrapper .status:first-child a.status__display-name[title="#{$name}"] .status__avatar::before {
-      background-image: url("https://hello.2heng.xin/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
-      content: "";
-      width: 176%;
-      height: 176%;
-      position: absolute;
-      z-index: 1;
-      background-size: 100% 100%;
-      top: -38%;
-      left: -38%;
+    .status__wrapper .status:first-child a.status__display-name[title="#{$name}"] .status__avatar {
+      .account__avatar {
+        background: #fff;
+        border-radius: 50%;
+      }
+
+      &::before {
+        background-image: url("https://hello.2heng.xin/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
+        content: "";
+        width: 176%;
+        height: 176%;
+        position: absolute;
+        z-index: 1;
+        background-size: 100% 100%;
+        top: -38%;
+        left: -38%;
+      }
     }
 
   }
@@ -44,9 +55,9 @@ $glyph in $user_config {
   }
 }
 
-// cat ear
+// cat ears
 .status__wrapper .status:first-child a.status__display-name {
-  #{$cat_ear_list} {
+  #{$cat_ears_list} {
     .status__avatar {
       .account__avatar {
         background: #fff;
