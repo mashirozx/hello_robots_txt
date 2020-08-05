@@ -33,8 +33,10 @@ jobs:
           source: custom/scss/pages.scss
           destination: public/custom/css/pages.css
 
-      - name: 🎭 Prepair files in public path
+      - name: 🎭 [1/2]. Copy robots.txt to public path
         run: cp robots.txt public
+
+      - name: 🎭 [2/2]. Copy custom/img to public path
         run: cp -r custom/img public/custom
 
       - name: 🚀 Deploy on gh-pages branch
