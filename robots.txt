@@ -1,0 +1,13 @@
+# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+
+User-agent: *
+Disallow: /media_proxy/
+Disallow: /interact/
+
+# Add rules for single user
+Disallow: /@233mc44/
+Disallow: /@233mc44$
+Disallow: /@inuoy/
+Disallow: /@inuoy$
+Disallow: /@winslow/
+Disallow: /@winslow$
