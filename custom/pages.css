@@ -1,0 +1,110 @@
+/*! hello.2heng.xin/gh/custom/pages.css | (c) Mashiro and other contributors | Licensed under the AGPL-3.0 License (https://www.gnu.org/licenses/agpl-3.0.html) */
+/* index server desc */
+.landing .hero-widget__text {
+  padding-bottom: 17px !important;
+}
+
+/*about/more page*/
+.cite {
+  position: relative;
+  font-family: serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-right: 48px;
+  margin-bottom: 1em
+}
+
+.cite footer {
+  font-family: sans-serif;
+  font-size: .7em;
+  font-weight: 700;
+  color: #d3d3cf;
+  position: relative;
+  text-align: right;
+  transform: translateX(50px)
+}
+
+.cite footer:before {
+  content: '——'
+}
+
+.cite:after {
+  content: '\e6a8';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: right;
+  font-family: forest;
+  font-size: 50px;
+  color: #e7e6e4;
+  transform: translateX(50px)
+}
+
+.theme-contrast .cite:after,
+.theme-default .cite:after {
+  color: #757f9b
+}
+
+/*about_more_donate*/
+.adout_more_donate {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around
+}
+
+.adout_more_donate dl {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
+}
+
+.adout_more_donate dt {
+  text-rendering: optimizelegibility;
+  font-feature-settings: "kern";
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  padding: 14px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  width: auto;
+  flex: 0 0 auto
+}
+
+.adout_more_donate dd {
+  text-rendering: optimizelegibility;
+  font-feature-settings: "kern";
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1 1 auto;
+  height: auto
+}
+
+.adout_more_donate img {
+  width: 160px
+}
+
+/*about-more table*/
+.rich-formatting table.break-word td,
+.rich-formatting table th {
+  word-break: break-word;
+}
