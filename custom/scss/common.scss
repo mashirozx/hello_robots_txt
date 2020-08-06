@@ -102,7 +102,7 @@
 }
 
 /*hashtag style*/
-.mention.hashtag.status-link {
+.hashtag.status-link {
   background-color: #93AEFD36;
   padding: 0px 5px;
   text-align: center;
@@ -115,19 +115,19 @@
   margin: 1px;
 }
 
-.mention.hashtag.status-link:before {
+.hashtag.status-link:before {
   content: '\e6a9';
   font-family: forest;
   color: #4c7cb4;
   padding-right: 2px;
 }
 
-.mention.hashtag.status-link:hover {
+.hashtag.status-link:hover {
   background-color: #cdd2f54f;
 }
 
 /*fix viewbox*/
-div.column {
+.column {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
