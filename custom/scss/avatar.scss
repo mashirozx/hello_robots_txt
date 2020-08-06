@@ -7,10 +7,13 @@
  * https://github.com/mashirozx/hello_robots_txt/blob/master/custom/docs/custom_avatar_frame.md
  */
 
-$user_config: ("mashiro": ("bili_frame", $bili_frame_010),
-  "sakura": ("cat_ears"),
+$user_config: (
+  /* add rules herer */
+  "mashiro": ("bili_frame", $bili_frame_085),
+  "sakura": ("bili_frame", $bili_frame_091),
   "test": ("cat_ears"),
-  "github": ("bili_frame", $bili_frame_091));
+  /* end of rules config */
+);
 
 .notification .status__avatar::before,
 .notification .status__avatar::after {
