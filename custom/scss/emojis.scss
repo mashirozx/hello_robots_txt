@@ -35,7 +35,7 @@
     background-color: rgba(246, 243, 237, 0);
     border-radius: 0;
     padding: 0;
-    transform: matrix(-5px, -5px);
+    transform: translate(0, 0);
     height: var(--custom-emoji-size-medium);
     width: var(--custom-emoji-size-medium);
     transition: padding var(--custom-emoji-scale-duration) ease-in-out, transform var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
@@ -45,7 +45,7 @@
       background-color: rgba(246, 243, 237, .8);
       padding: 5px;
       border-radius: 5px;
-      transform: matrix(-5px, -5px);
+      transform: translate(-5px, -5px);
     }
   }
 
@@ -54,7 +54,7 @@
     background-color: rgba(246, 243, 237, 0);
     border-radius: 0;
     padding: 0;
-    transform: matrix(-5px, -5px);
+    transform: translate(0, 0);
     height: var(--custom-emoji-size-large);
     width: var(--custom-emoji-size-large);
     transition: padding var(--custom-emoji-scale-duration) ease-in-out, transform var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
@@ -64,7 +64,7 @@
       background-color: rgba(246, 243, 237, .8);
       padding: 5px;
       border-radius: 5px;
-      transform: matrix(-5px, -5px);
+      transform: translate(-5px, -5px);
     }
   }
 }
