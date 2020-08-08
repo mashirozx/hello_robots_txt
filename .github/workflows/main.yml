@@ -1,4 +1,4 @@
-name: Compile SCSS
+name: Main Action
 
 on:
   push:
