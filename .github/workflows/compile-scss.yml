@@ -16,23 +16,11 @@ jobs:
       - name: 📂 Make destination directory for compiled CSS
         run: mkdir -vp public/custom/css
 
-      - name: 📃 [1/3]. Compile avatar.css from avatar.scss
+      - name: 📃 [1/1]. Compile index.css from index.scss
         uses: gha-utilities/sass-build@v0.2.6
         with:
-          source: custom/scss/avatar.scss
-          destination: public/custom/css/avatar.css
-      
-      - name: 📃 [2/3]. Compile common.css from common.scss
-        uses: gha-utilities/sass-build@v0.2.6
-        with:
-          source: custom/scss/common.scss
-          destination: public/custom/css/common.css
-      
-      - name: 📃 [3/3]. Compile pages.css from pages.scss
-        uses: gha-utilities/sass-build@v0.2.6
-        with:
-          source: custom/scss/pages.scss
-          destination: public/custom/css/pages.css
+          source: custom/scss/index.scss
+          destination: public/custom/css/index.css
 
       - name: 🎭 [1/2]. Copy robots.txt to public path
         run: cp robots.txt public
