@@ -32,40 +32,14 @@
   &[title^=":ak_"],
   &[title^=":bangdream_"],
   &[title^=":pcr_"] {
-    background-color: rgba(246, 243, 237, 0);
-    border-radius: 0;
-    padding: 0;
-    transform: translate(0, 0);
     height: var(--custom-emoji-size-medium);
     width: var(--custom-emoji-size-medium);
-    transition: padding var(--custom-emoji-scale-duration) ease-in-out, transform var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
-
-    &:hover {
-      transform: scale(var(--custom-emoji-hover-scale));
-      background-color: rgba(246, 243, 237, .8);
-      padding: 5px;
-      border-radius: 5px;
-      transform: translate(-5px, -5px);
-    }
   }
 
   // large stickers
   &[title^=":menhera_"][title$="_EN:"] {
-    background-color: rgba(246, 243, 237, 0);
-    border-radius: 0;
-    padding: 0;
-    transform: translate(0, 0);
     height: var(--custom-emoji-size-large);
     width: var(--custom-emoji-size-large);
-    transition: padding var(--custom-emoji-scale-duration) ease-in-out, transform var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
-
-    &:hover {
-      transform: scale(var(--custom-emoji-hover-scale));
-      background-color: rgba(246, 243, 237, .8);
-      padding: 5px;
-      border-radius: 5px;
-      transform: translate(-5px, -5px);
-    }
   }
 }
 
@@ -98,9 +72,3 @@
   height: 33px !important;
   width: 33px !important;
 }
-
-// if need special size in emoji-mart
-// .emoji-mart-category .emoji-mart-emoji.emoji-mart-emoji-custom[title^=":CalicoCat_MikuPiyo_"] span {
-//   height: 22px !important;
-//   width: 22px !important;
-// }
