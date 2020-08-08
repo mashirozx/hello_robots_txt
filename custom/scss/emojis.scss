@@ -32,35 +32,47 @@
   &[title^=":ak_"],
   &[title^=":bangdream_"],
   &[title^=":pcr_"] {
+    background-color: rgba(246, 243, 237, 0);
     border-radius: 0;
     padding: 0;
+    transform: matrix(-5px, -5px);
     height: var(--custom-emoji-size-medium);
     width: var(--custom-emoji-size-medium);
-    transition: padding var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
+    transition: padding var(--custom-emoji-scale-duration) ease-in-out, transform var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
 
     &:hover {
       transform: scale(var(--custom-emoji-hover-scale));
       background-color: rgba(246, 243, 237, .8);
       padding: 5px;
       border-radius: 5px;
+      transform: matrix(-5px, -5px);
     }
   }
 
   // large stickers
   &[title^=":menhera_"][title$="_EN:"] {
+    background-color: rgba(246, 243, 237, 0);
     border-radius: 0;
     padding: 0;
+    transform: matrix(-5px, -5px);
     height: var(--custom-emoji-size-large);
     width: var(--custom-emoji-size-large);
-    transition: padding var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
+    transition: padding var(--custom-emoji-scale-duration) ease-in-out, transform var(--custom-emoji-scale-duration) ease-in-out, border-radius var(--custom-emoji-scale-duration) ease-in-out;
 
     &:hover {
       transform: scale(var(--custom-emoji-hover-scale));
       background-color: rgba(246, 243, 237, .8);
-      border-radius: 5px;
       padding: 5px;
+      border-radius: 5px;
+      transform: matrix(-5px, -5px);
     }
   }
+}
+
+// fix custom rmoji in reaction bar
+.reactions-bar__item__emoji .emojione.custom-emoji {
+  width: 100%;
+  height: 100%;
 }
 
 // fix custom emoji in names
