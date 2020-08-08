@@ -103,31 +103,6 @@
   max-width: 100%
 }
 
-/*hashtag style*/
-.hashtag.status-link {
-  background-color: #93AEFD36;
-  padding: 0px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-style: dashed;
-  border-color: #93AEFD;
-  border-width: 0.5px;
-  border-radius: 5px;
-  margin: 1px;
-}
-
-.hashtag.status-link:before {
-  content: '\e6a9';
-  font-family: forest;
-  color: #4c7cb4;
-  padding-right: 2px;
-}
-
-.hashtag.status-link:hover {
-  background-color: #cdd2f54f;
-}
-
 /*fix viewbox*/
 .column {
   -webkit-box-flex: 1;
