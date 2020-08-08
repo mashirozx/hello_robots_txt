@@ -1,4 +1,44 @@
 /*! hello.2heng.xin/gh/custom/common.scss | (c) Mashiro and other contributors | Licensed under the AGPL-3.0 License (https://www.gnu.org/licenses/agpl-3.0.html) */
+/* force to show trands */
+.column .getting-started__trends {
+  display: block !important;
+}
+
+.column .getting-started__trends .trends__item:nth-child(2),
+.column .getting-started__trends .trends__item:nth-child(3) {
+  display: flex !important;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+
+// hashtag icon
+.hashtag.status-link:before {
+  content: '\e6a9';
+  font-family: forest;
+}
+
+// preview bg
+.spoiler-button {
+  background-image: url(https://hello.2heng.xin/aws/static/d4c.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(246, 243, 237, .9);
+}
+
+canvas.media-gallery__preview,
+.spoiler-button--click-thru {
+  background-image: url(https://hello.2heng.xin/aws/static/d4_.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(246, 243, 237, 1);
+}
+
 /*mastodon long images patch v2.1 by Shioko*/
 .image-loader {
   align-items: center
