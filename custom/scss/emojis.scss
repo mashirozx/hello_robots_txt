@@ -8,51 +8,61 @@
 }
 
 .emojione.custom-emoji {
-  height: var(--custom-emoji-size-enhance);
-  width: var(--custom-emoji-size-enhance);
-}
 
-.emojione.custom-emoji[title^=":pio_"],
-.emojione.custom-emoji[title^=":ac_classic"],
-.emojione.custom-emoji[title^=":ac_acg"],
-.emojione.custom-emoji[title^=":amiya_"],
-.emojione.custom-emoji[title^=":ak_"],
-.emojione.custom-emoji[title^=":bangdream_"],
-.emojione.custom-emoji[title^=":pcr_"] {
-  height: var(--custom-emoji-size-medium);
-  width: var(--custom-emoji-size-medium);
-  transform: scale(1);
-  transform-origin: center;
-  transition: transform var(--custom-emoji-scale-duration) ease-in-out;
-  // transition: height var(--custom-emoji-scale-duration) ease-in-out, width var(--custom-emoji-scale-duration) ease-in-out;
-}
+  // small emoji with little enhancement
+  &[title^=":menhera_lg_"],
+  &[title^=":CalicoCat_MikuPiyo_"],
+  &[title^=":bili_2233_"],
+  &[title^=":bili_tv_"],
+  &[title^=":ht_"],
+  &[title^=":re_zero_"],
+  &[title^=":kurumi_chan_"],
+  &[title^=":yuru_yuri_"],
+  &[title^=":natsume_"],
+  &[title^=":umaru_chan_"] {
+    height: var(--custom-emoji-size-enhance);
+    width: var(--custom-emoji-size-enhance);
+  }
 
-.emojione.custom-emoji[title^=":menhera_"][title$="_EN:"] {
-  display: block;
-  height: var(--custom-emoji-size-large);
-  width: var(--custom-emoji-size-large);
-  transform: scale(1);
-  transform-origin: center;
-  transition: transform var(--custom-emoji-scale-duration) ease-in-out;
-  // transition: height var(--custom-emoji-scale-duration) ease-in-out, width var(--custom-emoji-scale-duration) ease-in-out;
-}
+  // medium emoji
+  &[title^=":pio_"],
+  &[title^=":ac_classic"],
+  &[title^=":amiya_"],
+  &[title^=":ak_"],
+  &[title^=":bangdream_"],
+  &[title^=":pcr_"] {
+    height: var(--custom-emoji-size-medium);
+    width: var(--custom-emoji-size-medium);
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform var(--custom-emoji-scale-duration) ease-in-out;
 
-.emojione.custom-emoji[title^=":pio_"]:hover,
-.emojione.custom-emoji[title^=":ac_classic"]:hover,
-.emojione.custom-emoji[title^=":ac_acg"]:hover,
-.emojione.custom-emoji[title^=":amiya_"]:hover,
-.emojione.custom-emoji[title^=":ak_"]:hover,
-.emojione.custom-emoji[title^=":bangdream_"]:hover,
-.emojione.custom-emoji[title^=":pcr_"]:hover {
-  // height: calc(var(--custom-emoji-hover-scale) * var(--custom-emoji-size-medium));
-  // width: calc(var(--custom-emoji-hover-scale) * var(--custom-emoji-size-medium));
-  transform: scale(var(--custom-emoji-hover-scale));
-}
+    &:hover {
+      transform: scale(var(--custom-emoji-hover-scale));
+      background-color: #f6f3ed;
+      padding: 5px;
+      border-radius: 5px;
+      opacity: .9;
+    }
+  }
 
-.emojione.custom-emoji[title^=":menhera_"][title$="_EN:"]:hover {
-  height: calc(var(--custom-emoji-hover-scale) * var(--custom-emoji-size-large));
-  width: calc(var(--custom-emoji-hover-scale) * var(--custom-emoji-size-large));
-  transform: scale(var(--custom-emoji-hover-scale));
+  // large stickers
+  &[title^=":menhera_"][title$="_EN:"] {
+    display: block;
+    height: var(--custom-emoji-size-large);
+    width: var(--custom-emoji-size-large);
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform var(--custom-emoji-scale-duration) ease-in-out;
+
+    &:hover {
+      transform: scale(var(--custom-emoji-hover-scale));
+      background-color: #f6f3ed;
+      padding: 5px;
+      border-radius: 5px;
+      opacity: .9;
+    }
+  }
 }
 
 // fix custom emoji in names
