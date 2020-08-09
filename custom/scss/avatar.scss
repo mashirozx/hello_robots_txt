@@ -33,9 +33,12 @@ $glyph in $user_config {
   @else if nth($glyph, 1)=="bili_frame" {
 
     .status__wrapper a.status__display-name[href="#{$name}"] .status__avatar,
-    .account__header__tabs a.avatar[href="#{$name}"] {
+    .account__header__tabs a.avatar[href="#{$name}"],
+    .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar,
+    .public-account-header__bar a.avatar[href="#{$name}"] {
 
-      .account__avatar {
+      .account__avatar,
+      #profile_page_avatar {
         transform: scale(0.8);
         background: #fff;
         border-radius: 50%;
