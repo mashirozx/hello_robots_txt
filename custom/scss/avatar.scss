@@ -45,7 +45,7 @@ $glyph in $user_config {
 
         &::before {
           background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
-          content: "";
+          content: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
           width: 176%;
           height: 176%;
           position: absolute;
