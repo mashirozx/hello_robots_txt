@@ -32,7 +32,11 @@ $glyph in $user_config {
 
   @else if nth($glyph, 1)=="bili_frame" {
 
-    .status__wrapper a.status__display-name[href="#{$name}"] .status__avatar,
+    // normal timeline
+    .status__wrapper a.status__display-name[href="#{$name}"],
+    // toot detail page
+    .detailed-status__wrapper a.detailed-status__display-name[href="#{$name}"],
+    // account page header
     .account__header__tabs a.avatar[href="#{$name}"] {
       .account__avatar {
         transform: scale(0.8);
@@ -53,6 +57,7 @@ $glyph in $user_config {
       }
     }
 
+    // public account page (can do noting with the header img with css)
     .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar {
       transform: scale(0.8);
       background: #fff;
@@ -79,54 +84,58 @@ $glyph in $user_config {
 }
 
 // cat ears
-.status__wrapper a.status__display-name {
+// normal timeline
+.status__wrapper a.status__display-name,
+// toot detail page
+.detailed-status__wrapper a.detailed-status__display-name,
+// account page header
+.account__header__tabs a.avatar {
   #{$cat_ears_list} {
-    .status__avatar {
-      .account__avatar {
-        background: #fff;
-        border-radius: 30%;
-        z-index: 1;
-      }
-
-      &::before,
-      &::after {
-        content: "";
-        display: inline-block;
-        border: 3px solid;
-        box-sizing: border-box;
-        width: 50%;
-        height: 50%;
-        background-color: inherit;
-        border-color: rgba(145, 161, 236, 0.639);
-        position: absolute;
-        z-index: 0;
-      }
-
-      &::before {
-        border-radius: 90% 40% 100% 100%;
-        transform: rotate(-37.6deg) skew(-30deg);
-        top: 0;
-        bottom: 0;
-        right: 0;
-      }
-
-      &::after {
-        border-radius: 40% 90% 100% 100%;
-        transform: rotate(37.6deg) skew(30deg);
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      &:hover::before {
-        animation: earwiggleright 1s infinite;
-      }
-
-      &:hover::after {
-        animation: earwiggleleft 1s infinite;
-      }
+    .account__avatar {
+      background: #fff;
+      border-radius: 30%;
+      z-index: 1;
     }
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      border: 3px solid;
+      box-sizing: border-box;
+      width: 50%;
+      height: 50%;
+      background-color: inherit;
+      border-color: rgba(145, 161, 236, 0.639);
+      position: absolute;
+      z-index: 0;
+    }
+
+    &::before {
+      border-radius: 90% 40% 100% 100%;
+      transform: rotate(-37.6deg) skew(-30deg);
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    &::after {
+      border-radius: 40% 90% 100% 100%;
+      transform: rotate(37.6deg) skew(30deg);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover::before {
+      animation: earwiggleright 1s infinite;
+    }
+
+    &:hover::after {
+      animation: earwiggleleft 1s infinite;
+    }
+
   }
 }
 
