@@ -42,10 +42,10 @@ $glyph in $user_config {
         transform: scale(0.8);
         background: #fff;
         border-radius: 50%;
+        content: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
 
         &::before {
           background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
-          content: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
           width: 176%;
           height: 176%;
           position: absolute;
