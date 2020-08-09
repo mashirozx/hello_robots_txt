@@ -53,8 +53,7 @@ $glyph in $user_config {
       }
     }
 
-    // .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar,
-    .public-account-header__bar a.avatar[href="#{$name}"] {
+    .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar {
       transform: scale(0.8);
       background: #fff;
       border-radius: 50%;
