@@ -37,15 +37,39 @@ $glyph in $user_config {
     .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar,
     .public-account-header__bar a.avatar[href="#{$name}"] {
 
+      img {
+        /* hide the default image */
+        height:0;
+        width:0;
+      
+        /* hide fake content */
+        font-size:0;
+        color:transparent;
+      
+        /* enable absolute position for pseudo elements */
+        position:relative;
+      
+        /* and this is just fake content */
+        content:"I'm just fake content";
+      }
+      
+      /* initial absolute position */
+      img:before,
+      img:after {
+        position:absolute;
+        top:0;
+        left:0;    
+      }
+
       .account__avatar,
       #profile_page_avatar {
         transform: scale(0.8);
         background: #fff;
         border-radius: 50%;
-        content: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
 
         &::before {
           background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
+          content: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
           width: 176%;
           height: 176%;
           position: absolute;
