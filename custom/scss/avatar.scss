@@ -9,9 +9,9 @@
 
 $user_config: (
   /* add rules herer */
-  "mashiro": ("bili_frame", $bili_frame_085),
-  "sakura": ("bili_frame", $bili_frame_091),
-  "test": ("cat_ears"),
+  "https://hello.2heng.xin/@mashiro": ("bili_frame", $bili_frame_085),
+  "https://hello.2heng.xin/@sakura": ("bili_frame", $bili_frame_091),
+  "https://hello.2heng.xin/@test": ("cat_ears"),
   /* end of rules config */
 );
 
@@ -32,7 +32,10 @@ $glyph in $user_config {
 
   @else if nth($glyph, 1)=="bili_frame" {
 
-    .status__wrapper .status:first-child a.status__display-name[title="#{$name}"] .status__avatar {
+    .status__wrapper a.status__display-name[href="#{$name}"] .status__avatar,
+    .account__header__tabs a.avatar[href="#{$name}"] .account__avatar {
+      transform: scale(0.8);
+
       .account__avatar {
         background: #fff;
         border-radius: 50%;
@@ -59,7 +62,7 @@ $glyph in $user_config {
 }
 
 // cat ears
-.status__wrapper .status:first-child a.status__display-name {
+.status__wrapper a.status__display-name {
   #{$cat_ears_list} {
     .status__avatar {
       .account__avatar {
