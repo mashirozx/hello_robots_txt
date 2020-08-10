@@ -24,7 +24,7 @@ PS. To use this API, you need to login your Bilibili account in browser first.
 
 ***
 
-你需要一个Github账号，按下面指示修改后向本仓库提交 pull request，如果你是小白不会 pull request，建议先阅读这篇我能找到的最浅显的 Github 使用教程：<https://www.jianshu.com/p/d2b95458ff63>，实在还是不会私信我吧（[@mashiro](https://hello.2heng.xin/@mashiro)）。
+这里是配置项的说明，如果你是第一次用 Github，请照这里的说明操作：https://hello.2heng.xin/@sakura/104662388067118300
 
 需要添加头像框只需按以下例子向 [avatar.scss](https://github.com/mashirozx/hello_robots_txt/blob/master/custom/scss/avatar.scss) 文件中的 $user_config 添加规则即可:
 
