@@ -2,7 +2,8 @@ Add custom avatar frame for your Mastodon account
 
 为你的 Mastodon 账号添加一个头像框
 
-*中文说明在后面*
+<details>
+ <summary>English Manual</summary>
 
 To add a custom avatar frame, just add your rules to $user_config in [avatar.scss](https://github.com/mashirozx/hello_robots_txt/blob/master/custom/scss/avatar.scss) as samples:
 
@@ -24,6 +25,11 @@ PS. To use this API, you need to login your Bilibili account in browser first.
 
 ***
 
+</details>
+
+<details>
+ <summary>中文说明</summary>
+
 这里是配置项的说明，如果你是第一次用 Github，请照这里的说明操作：https://hello.2heng.xin/@sakura/104662388067118300
 
 需要添加头像框只需按以下例子向 [avatar.scss](https://github.com/mashirozx/hello_robots_txt/blob/master/custom/scss/avatar.scss) 文件中的 $user_config 添加规则即可:
@@ -42,4 +48,6 @@ PS. To use this API, you need to login your Bilibili account in browser first.
 
 如果你想要获取更多 bilibili.com 的头像框, 这个接口会很有用 :)
 <http://api.bilibili.com/x/space/acc/info?mid=13972644>  
-PS. 使用前请在浏览器上登陆自己的b站账号.
+PS. 使用前请在浏览器上登陆自己的b站账号（cookie认证）.
+
+</details>
