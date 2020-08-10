@@ -48,8 +48,12 @@ $glyph in $user_config {
     }
 
     // fix size in detail page
-    .detailed-status__wrapper a.detailed-status__display-name[href="#{$name}"] {
-      transform: scale(calc(1 / 1.76))
+    .detailed-status__wrapper a.detailed-status__display-name {
+      &[href="#{$name}"] {
+        .account__avatar {
+          transform: scale(calc(1 / 1.76))
+        }
+      }
     }
 
     // public account page (can do noting with the header img with css)
