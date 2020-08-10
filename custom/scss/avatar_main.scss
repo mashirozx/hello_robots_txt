@@ -21,33 +21,40 @@ $glyph in $user_config {
   @else if nth($glyph, 1)=="bili_frame" {
 
     // normal timeline
-    .status__wrapper a.status__display-name[href="#{$name}"],
+    .status__wrapper a.status__display-name,
     // toot detail page
-    .detailed-status__wrapper a.detailed-status__display-name[href="#{$name}"],
+    .detailed-status__wrapper a.detailed-status__display-name,
     // account page header
-    .account__header__tabs a.avatar[href="#{$name}"] {
-      .account__avatar {
-        transform: scale(scale(calc(1 / 1.76)));
-        background: #fff;
-        border-radius: 50%;
+    .account__header__tabs a.avatar {
+      &[href="#{$name}"] {
+        .account__avatar {
+          transform: scale(.8);
+          background: #fff;
+          border-radius: 50%;
 
-        &::before {
-          background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
-          content: "";
-          width: 176%;
-          height: 176%;
-          position: absolute;
-          z-index: 1;
-          background-size: 100% 100%;
-          top: -38%;
-          left: -38%;
+          &::before {
+            background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
+            content: "";
+            width: 176%;
+            height: 176%;
+            position: absolute;
+            z-index: 1;
+            background-size: 100% 100%;
+            top: -38%;
+            left: -38%;
+          }
         }
       }
     }
 
+    // fix size in detail page
+    .detailed-status__wrapper a.detailed-status__display-name[href="#{$name}"] {
+      transform: scale(calc(1 / 1.76))
+    }
+
     // public account page (can do noting with the header img with css)
     .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar {
-      transform: scale(scale(calc(1 / 1.76)));
+      transform: scale(.8);
       background: #fff;
       border-radius: 50%;
 
