@@ -1,0 +1,174 @@
+/*! hello.2heng.xin/gh/custom/avatar.scss | (c) Mashiro and other contributors | Licensed under the AGPL-3.0 License (https://www.gnu.org/licenses/agpl-3.0.html) */
+/*! You can also add your avatar frame for you account easily here: https://github.com/mashirozx/hello_robots_txt/blob/master/custom/scss/avatar.scss */
+@import "avatar_variables.scss";
+@import "avatar.scss";
+
+.notification .status__avatar::before,
+.notification .status__avatar::after {
+  display: none !important;
+}
+
+$cat_ears_list: ();
+
+@each $name,
+$glyph in $user_config {
+  @if nth($glyph, 1)=="cat_ears" {
+
+    $cat_ears_list: append($cat_ears_list, unquote("&[title='#{$name}']"), comma);
+
+  }
+
+  @else if nth($glyph, 1)=="bili_frame" {
+
+    // normal timeline
+    .status__wrapper a.status__display-name[href="#{$name}"],
+    // toot detail page
+    .detailed-status__wrapper a.detailed-status__display-name[href="#{$name}"],
+    // account page header
+    .account__header__tabs a.avatar[href="#{$name}"] {
+      .account__avatar {
+        transform: scale(scale(calc(1 / 1.76)));
+        background: #fff;
+        border-radius: 50%;
+
+        &::before {
+          background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
+          content: "";
+          width: 176%;
+          height: 176%;
+          position: absolute;
+          z-index: 1;
+          background-size: 100% 100%;
+          top: -38%;
+          left: -38%;
+        }
+      }
+    }
+
+    // public account page (can do noting with the header img with css)
+    .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar {
+      transform: scale(scale(calc(1 / 1.76)));
+      background: #fff;
+      border-radius: 50%;
+
+      &::before {
+        background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
+        content: "";
+        width: 176%;
+        height: 176%;
+        position: absolute;
+        z-index: 1;
+        background-size: 100% 100%;
+        top: -38%;
+        left: -38%;
+      }
+    }
+
+  }
+
+  @else {
+    // nothing to do
+  }
+}
+
+// cat ears
+// normal timeline
+.status__wrapper a.status__display-name,
+// toot detail page
+.detailed-status__wrapper a.detailed-status__display-name,
+// account page header
+.account__header__tabs a.avatar {
+  #{$cat_ears_list} {
+    .account__avatar {
+      background: #fff;
+      border-radius: 30%;
+      z-index: 1;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      border: 3px solid;
+      box-sizing: border-box;
+      width: 50%;
+      height: 50%;
+      background-color: inherit;
+      border-color: rgba(145, 161, 236, 0.639);
+      position: absolute;
+      z-index: 0;
+    }
+
+    &::before {
+      border-radius: 90% 40% 100% 100%;
+      transform: rotate(-37.6deg) skew(-30deg);
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    &::after {
+      border-radius: 40% 90% 100% 100%;
+      transform: rotate(37.6deg) skew(30deg);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover::before {
+      animation: earwiggleright 1s infinite;
+    }
+
+    &:hover::after {
+      animation: earwiggleleft 1s infinite;
+    }
+
+  }
+}
+
+// car ear animation left
+@keyframes earwiggleleft {
+  from {
+    transform: rotate(27.6deg) skew(30deg);
+  }
+
+  25% {
+    transform: rotate(10deg) skew(30deg);
+  }
+
+  50% {
+    transform: rotate(20deg) skew(30deg);
+  }
+
+  75% {
+    transform: rotate(0deg) skew(30deg);
+  }
+
+  to {
+    transform: rotate(27.6deg) skew(30deg);
+  }
+}
+
+// car ear animation right
+@keyframes earwiggleright {
+  from {
+    transform: rotate(-37.6deg) skew(-30deg);
+  }
+
+  25% {
+    transform: rotate(-10deg) skew(-30deg);
+  }
+
+  50% {
+    transform: rotate(-20deg) skew(-30deg);
+  }
+
+  75% {
+    transform: rotate(-0deg) skew(-30deg);
+  }
+
+  to {
+    transform: rotate(-37.6deg) skew(-30deg);
+  }
+}
