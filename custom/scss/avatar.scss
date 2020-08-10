@@ -40,7 +40,7 @@ $glyph in $user_config {
     // account page header
     .account__header__tabs a.avatar[href="#{$name}"] {
       .account__avatar {
-        transform: scale(0.8);
+        transform: scale(scale(calc(1 / 1.76)));
         background: #fff;
         border-radius: 50%;
 
@@ -60,7 +60,7 @@ $glyph in $user_config {
 
     // public account page (can do noting with the header img with css)
     .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar {
-      transform: scale(0.8);
+      transform: scale(scale(calc(1 / 1.76)));
       background: #fff;
       border-radius: 50%;
 
