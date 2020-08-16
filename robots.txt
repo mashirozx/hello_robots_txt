@@ -11,3 +11,5 @@ Disallow: /@inuoy/
 Disallow: /@inuoy$
 Disallow: /@winslow/
 Disallow: /@winslow$
+Disallow: /@dear/
+Disallow: /@dear$
