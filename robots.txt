@@ -13,3 +13,5 @@ Disallow: /@winslow/
 Disallow: /@winslow$
 Disallow: /@dear/
 Disallow: /@dear$
+Disallow: /@literalkernel/
+Disallow: /@literalkernel$
