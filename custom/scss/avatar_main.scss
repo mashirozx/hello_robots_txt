@@ -36,7 +36,7 @@ $glyph in $user_config {
       &[href="#{$name}"] {
         .account__avatar {
           transform: scale(.8);
-          background: #fff;
+          background: var(--theme-white);
           border-radius: 50%;
 
           &::before {
@@ -66,7 +66,7 @@ $glyph in $user_config {
     // public account page (can do noting with the header img with css)
     .status a.status__display-name.u-url[href="#{$name}"] .status__avatar {
       transform: scale(.8);
-      background: #fff;
+      background: var(--theme-white);
       border-radius: 50%;
 
       &::before {
@@ -101,7 +101,7 @@ $glyph in $user_config {
   #{$cat_ears_list} {
     .status__avatar {
       .account__avatar {
-        background: #fff;
+        background: var(--theme-white);
         border-radius: 30%;
         z-index: 1;
       }
@@ -115,7 +115,8 @@ $glyph in $user_config {
         width: 50%;
         height: 50%;
         background-color: inherit;
-        border-color: rgba(145, 161, 236, 0.639);
+        border-color: var(--theme-ui-highlight-color);
+        opacity: 0.6;
         position: absolute;
         z-index: 0;
       }
