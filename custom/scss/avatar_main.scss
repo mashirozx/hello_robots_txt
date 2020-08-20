@@ -1,4 +1,4 @@
-/*! hello.2heng.xin/gh/custom/avatar.scss | (c) Mashiro and other contributors | Licensed under the AGPL-3.0 License (https://www.gnu.org/licenses/agpl-3.0.html) */
+/*! hello.2heng.xin/custom.scss | (c) Mashiro and other contributors | Licensed under the AGPL-3.0 License (https://www.gnu.org/licenses/agpl-3.0.html) */
 /*! You can also add your avatar frame for you account easily here: https://github.com/mashirozx/hello_robots_txt/blob/master/custom/scss/avatar.scss */
 @import "avatar_variables.scss";
 @import "avatar.scss";
@@ -57,7 +57,7 @@ $glyph in $user_config {
     }
 
     // public account page (can do noting with the header img with css)
-    .status.status-public a.status__display-name.u-url[href="#{$name}"] .status__avatar {
+    .status a.status__display-name.u-url[href="#{$name}"] .status__avatar {
       transform: scale(.8);
       background: #fff;
       border-radius: 50%;
