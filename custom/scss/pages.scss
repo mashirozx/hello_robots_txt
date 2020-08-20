@@ -18,7 +18,7 @@
   font-family: sans-serif;
   font-size: .7em;
   font-weight: 700;
-  color: #d3d3cf;
+  color: var(--theme-ui-base-color);
   position: relative;
   text-align: right;
   transform: translateX(50px)
@@ -36,13 +36,8 @@
   text-align: right;
   font-family: forest;
   font-size: 50px;
-  color: #e7e6e4;
+  color: var(--theme-ui-base-color);
   transform: translateX(50px)
-}
-
-.theme-contrast .cite:after,
-.theme-default .cite:after {
-  color: #757f9b
 }
 
 /*about_more_donate*/
