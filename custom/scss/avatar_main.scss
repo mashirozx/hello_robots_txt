@@ -88,53 +88,56 @@ $glyph in $user_config {
 // toot detail page
 .detailed-status__wrapper a.detailed-status__display-name,
 // account page header
-.account__header__tabs a.avatar {
+.account__header__tabs a.avatar,
+// public account page (can do noting with the header img with css)
+.status a.status__display-name.u-url {
   #{$cat_ears_list} {
-    .account__avatar {
-      background: #fff;
-      border-radius: 30%;
-      z-index: 1;
-    }
+    .status__avatar {
+      .account__avatar {
+        background: #fff;
+        border-radius: 30%;
+        z-index: 1;
+      }
 
-    &::before,
-    &::after {
-      content: "";
-      display: inline-block;
-      border: 3px solid;
-      box-sizing: border-box;
-      width: 50%;
-      height: 50%;
-      background-color: inherit;
-      border-color: rgba(145, 161, 236, 0.639);
-      position: absolute;
-      z-index: 0;
-    }
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        border: 3px solid;
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+        background-color: inherit;
+        border-color: rgba(145, 161, 236, 0.639);
+        position: absolute;
+        z-index: 0;
+      }
 
-    &::before {
-      border-radius: 90% 40% 100% 100%;
-      transform: rotate(-37.6deg) skew(-30deg);
-      top: 0;
-      bottom: 0;
-      right: 0;
-    }
+      &::before {
+        border-radius: 90% 40% 100% 100%;
+        transform: rotate(-37.6deg) skew(-30deg);
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
 
-    &::after {
-      border-radius: 40% 90% 100% 100%;
-      transform: rotate(37.6deg) skew(30deg);
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
+      &::after {
+        border-radius: 40% 90% 100% 100%;
+        transform: rotate(37.6deg) skew(30deg);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
 
-    &:hover::before {
-      animation: earwiggleright 1s infinite;
-    }
+      &:hover::before {
+        animation: earwiggleright 1s infinite;
+      }
 
-    &:hover::after {
-      animation: earwiggleleft 1s infinite;
+      &:hover::after {
+        animation: earwiggleleft 1s infinite;
+      }
     }
-
   }
 }
 
