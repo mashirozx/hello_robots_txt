@@ -1,10 +1,9 @@
 // resize custom emoji
-:root {
-  --custom-emoji-size-enhance: 36px;
-  --custom-emoji-size-medium: 60px;
-  --custom-emoji-size-large: 100px;
-  --custom-emoji-hover-scale: 1.5;
-  --custom-emoji-scale-duration: .3s;
+$custom-emoji-size-enhance: 36px;
+$custom-emoji-size-medium: 60px;
+$custom-emoji-size-large: 100px;
+$custom-emoji-hover-scale: 1.5;
+$custom-emoji-scale-duration: .3s;
 }
 
 .emojione.custom-emoji {
@@ -20,8 +19,8 @@
   &[title^=":yuru_yuri_"],
   &[title^=":natsume_"],
   &[title^=":umaru_chan_"] {
-    height: var(--custom-emoji-size-enhance);
-    width: var(--custom-emoji-size-enhance);
+    height: $custom-emoji-size-enhance;
+    width: $custom-emoji-size-enhance;
   }
 
   // medium emoji
@@ -32,14 +31,14 @@
   &[title^=":ak_"],
   &[title^=":bangdream_"],
   &[title^=":pcr_"] {
-    height: var(--custom-emoji-size-medium);
-    width: var(--custom-emoji-size-medium);
+    height: $custom-emoji-size-medium;
+    width: $custom-emoji-size-medium;
   }
 
   // large stickers
   &[title^=":menhera_"][title$="_EN:"] {
-    height: var(--custom-emoji-size-large);
-    width: var(--custom-emoji-size-large);
+    height: $custom-emoji-size-large;
+    width: $custom-emoji-size-large;
   }
 }
 
