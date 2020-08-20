@@ -12,12 +12,19 @@ $cat_ears_list: ();
 
 @each $name,
 $glyph in $user_config {
+
+  /*
+   * List: cat ears
+   */
   @if nth($glyph, 1)=="cat_ears" {
 
     $cat_ears_list: append($cat_ears_list, unquote("&[href='#{$name}']"), comma);
 
   }
 
+  /*
+   * Styles: bili avatar
+   */
   @else if nth($glyph, 1)=="bili_frame" {
 
     // normal timeline
