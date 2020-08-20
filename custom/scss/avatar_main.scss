@@ -14,7 +14,7 @@ $cat_ears_list: ();
 $glyph in $user_config {
   @if nth($glyph, 1)=="cat_ears" {
 
-    $cat_ears_list: append($cat_ears_list, unquote("&[title='#{$name}']"), comma);
+    $cat_ears_list: append($cat_ears_list, unquote("&[href='#{$name}']"), comma);
 
   }
 
