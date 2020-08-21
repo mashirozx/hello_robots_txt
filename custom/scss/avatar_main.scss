@@ -40,7 +40,7 @@ $glyph in $user_config {
           border-radius: 50%;
 
           &::before {
-            background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
+            background-image: url("/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
             content: "";
             width: 176%;
             height: 176%;
@@ -70,7 +70,7 @@ $glyph in $user_config {
       border-radius: 50%;
 
       &::before {
-        background-image: url("https://hello.2heng.xin/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
+        background-image: url("/aws/gh/custom/img/avatar_frame/#{nth($glyph, 2)}");
         content: "";
         width: 176%;
         height: 176%;
