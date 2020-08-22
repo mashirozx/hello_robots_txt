@@ -77,7 +77,10 @@ data = [
     ['bilibili秋', 'http://i2.hdslb.com/bfs/face/aa04bf5ba7157461de99ab4de2e6250b3498d304.png'],
     ['约战：精灵再临', 'http://i0.hdslb.com/bfs/garb/item/88973710baf6272bafe36b1ae77fbad5e2b688a4.png'],
     ['#EveOneCat', 'http://i0.hdslb.com/bfs/garb/item/3a6053f073f979a776e02e088dd7dd7694c5b1f3.png'],
-    ['#EveOneCat（动态）', 'http://i0.hdslb.com/bfs/garb/item/6c7f2ccb92627b11101dfbb616524845cac8f216.webp']
+    ['#EveOneCat（动态）', 'http://i0.hdslb.com/bfs/garb/item/6c7f2ccb92627b11101dfbb616524845cac8f216.webp'],
+    ['神楽Mea', 'http://i1.hdslb.com/bfs/garb/item/96ba41adf86dffadd1c7ec5774eb7b3f314fe446.png'],
+    ['湊-阿库娅', 'http://i0.hdslb.com/bfs/garb/item/d8caba83a6c5d917c15436c0bead848e41a5d0b5.png'],
+    ['打卡不咕', 'http://i2.hdslb.com/bfs/face/912e741cace38fad6df903e0319125e24ac22c40.png']
 ]
 
 for item in data:
