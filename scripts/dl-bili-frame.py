@@ -97,7 +97,6 @@ for item in data:
       id = '0' + str(i)
     else:
       id = str(i)
-    i += 1
     scss_line = f'$bili_frame_{id}: "{f_name}"; // {name} @ {url}'
     historyList.append(scss_line)
     with open(scss_file, 'w+', encoding="utf-8") as db:
