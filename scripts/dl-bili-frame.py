@@ -80,7 +80,11 @@ data = [
     ['#EveOneCat（动态）', 'http://i0.hdslb.com/bfs/garb/item/6c7f2ccb92627b11101dfbb616524845cac8f216.webp'],
     ['神楽Mea', 'http://i1.hdslb.com/bfs/garb/item/96ba41adf86dffadd1c7ec5774eb7b3f314fe446.png'],
     ['湊-阿库娅', 'http://i0.hdslb.com/bfs/garb/item/d8caba83a6c5d917c15436c0bead848e41a5d0b5.png'],
-    ['打卡不咕', 'http://i2.hdslb.com/bfs/face/912e741cace38fad6df903e0319125e24ac22c40.png']
+    ['打卡不咕', 'http://i2.hdslb.com/bfs/face/912e741cace38fad6df903e0319125e24ac22c40.png'],
+    ['初音未来13周年', 'http://i2.hdslb.com/bfs/garb/item/4f8f3f1f2d47f0dad84f66aa57acd4409ea46361.png'],
+    ['初音未来13周年（动态）', 'http://i2.hdslb.com/bfs/garb/item/fe0b83b53e2342b16646f6e7a9370d8a867decdb.webp'],
+    ['新科娘', 'http://i1.hdslb.com/bfs/garb/item/9b79619a952eb454909088360b147aa1a09ec7cf.png'],
+    ['灵笼', 'http://i1.hdslb.com/bfs/garb/item/47e2e835b53cc2770889525954ce7513301b4b60.png']
 ]
 
 for item in data:
