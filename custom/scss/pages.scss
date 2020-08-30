@@ -101,7 +101,20 @@
 }
 
 /*about-more table*/
-.rich-formatting table.break-word td,
-.rich-formatting table th {
-  word-break: break-word;
+.rich-formatting table {
+  &.break-word {
+
+    td,
+    th {
+      word-break: break-word;
+    }
+
+    th {
+      background: transparent;
+    }
+  }
+
+  a.table-action-link {
+    text-decoration: none !important;
+  }
 }
