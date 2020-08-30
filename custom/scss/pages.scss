@@ -108,13 +108,13 @@
     th {
       word-break: break-word;
     }
-
-    th {
-      background: transparent;
-    }
   }
 
-  a {
+  th {
+    background: transparent;
+  }
+
+  a.table-action-link {
     text-decoration: none !important;
   }
 }
