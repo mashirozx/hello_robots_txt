@@ -21,6 +21,11 @@
   font-family: forest;
 }
 
+.hash_char {
+  font-size: 0;
+  line-height: 0;
+}
+
 // preview bg
 /*.spoiler-button:not(.spoiler-button--minified) {
   background-image: url(/aws/static/d4c.png);
