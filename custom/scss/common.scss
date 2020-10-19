@@ -16,9 +16,11 @@
 }
 
 // hashtag icon
-.hashtag.status-link:before {
-  content: '\e6a9';
-  font-family: forest;
+.hashtag.status-link:before,
+.status-public .hashtag {
+  content: "\f02c";
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
 }
 
 .hash_char {
