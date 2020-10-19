@@ -29,17 +29,27 @@
   content: '——'
 }
 
-.cite:after {
-  content: '\e6a8';
+// .cite:after {
+//   content: '\e6a8';
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   text-align: right;
+//   font-family: forest;
+//   font-size: 50px;
+//   color: var(--theme-ui-highlight-color);
+//   opacity: 0.5;
+//   transform: translateX(50px)
+// }
+.cite-after {
   position: absolute;
   top: 0;
   width: 100%;
   text-align: right;
-  font-family: forest;
   font-size: 50px;
   color: var(--theme-ui-highlight-color);
-  opacity: 0.5;
-  transform: translateX(50px)
+  opacity: .5;
+  transform: translateX(50px);
 }
 
 /*about_more_donate*/
