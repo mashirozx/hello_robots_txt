@@ -28,13 +28,13 @@ jobs:
       - name: 🎭 [2/2]. Copy custom/img to public path
         run: cp -r custom/img public/custom
 
-      - name: 🚀 Deploy on gh-pages branch
-        #uses: JamesIvJamesIves/githubJamesIves/github-pages-deploy-action@releases/v3
-        uses: JamesIves/github-pages-deploy-action@3.5.7
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: public
+      #- name: 🚀 Deploy on gh-pages branch
+      #  #uses: JamesIvJamesIves/githubJamesIves/github-pages-deploy-action@releases/v3
+      #  uses: JamesIves/github-pages-deploy-action@3.5.7
+      #  with:
+      #    ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      #    BRANCH: gh-pages
+      #    FOLDER: public
 
       - name: 🔄 Sync with S3
         uses: jakejarvis/s3-sync-action@master
