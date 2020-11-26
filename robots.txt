@@ -15,6 +15,5 @@ Disallow: /@dear/
 Disallow: /@dear$
 Disallow: /@literalkernel/
 Disallow: /@literalkernel$
-Disallow: /@cool/
-Disallow: /@cool$
 Disallow: /@Yukino/
+Disallow: /@Yukino$
