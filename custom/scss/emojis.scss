@@ -40,6 +40,7 @@ $custom-emoji-scale-duration: .3s;
   }
 
   // large stickers
+  &[title^=":genshin_"],
   &[title^=":menhera_"][title$="_EN:"] {
     height: $custom-emoji-size-large;
     width: $custom-emoji-size-large;
