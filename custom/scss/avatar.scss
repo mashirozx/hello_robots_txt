@@ -1,4 +1,4 @@
-/* 
+/*
  * Add custom avatar frame for your Mastodon account, see:
  * 为你的 Mastodon 账号添加一个头像框，请按照链接中的说明修改：
  * https://github.com/mashirozx/hello_robots_txt/blob/master/custom/docs/custom_avatar_frame.md
@@ -6,7 +6,7 @@
 
 $user_config: (
   /* add rules here */
-  "https://hello.2heng.xin/@mashiro": ("bili_frame", $bili_frame_105),
+  "https://hello.2heng.xin/@mashiro": ("bili_frame", $bili_frame_116),
   "https://hello.2heng.xin/@sakura": ("bili_frame", $bili_frame_085),
   "https://hello.2heng.xin/@arknights": ("bili_frame", $bili_frame_096),
   "https://hello.2heng.xin/@test": ("cat_ears"),
