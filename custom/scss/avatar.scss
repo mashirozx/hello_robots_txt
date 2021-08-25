@@ -4,7 +4,7 @@
  * https://github.com/mashirozx/hello_robots_txt/blob/master/custom/docs/custom_avatar_frame.md
  */
 
-$user_config:"https://hello.2heng.xin/@Amis": ("bili_frame",$bili_frame_093),
+$user_config:
   /* add rules here */
   "https://hello.2heng.xin/@mashiro": ("bili_frame", $bili_frame_116),
   "https://hello.2heng.xin/@sakura": ("bili_frame", $bili_frame_085),
@@ -19,5 +19,6 @@ $user_config:"https://hello.2heng.xin/@Amis": ("bili_frame",$bili_frame_093),
   "https://hello.2heng.xin/@su": ("bili_frame", $bili_frame_096),
   "https://hello.2heng.xin/@maifan": ("bili_frame", $bili_frame_021),
   "https://hello.2heng.xin/@bfnet96999": ("bili_frame", $bili_frame_012),
+  "https://hello.2heng.xin/@Amis": ("bili_frame",$bili_frame_093),
   /* end of rules config */
 );
