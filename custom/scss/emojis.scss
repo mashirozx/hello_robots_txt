@@ -73,7 +73,10 @@ $custom-emoji-scale-duration: .3s;
 }
 
 // emoji-mart resize
-.emoji-mart-category .emoji-mart-emoji.emoji-mart-emoji-custom span {
-  height: 33px !important;
-  width: 33px !important;
+.emoji-mart-category .emoji-mart-emoji.emoji-mart-emoji-custom {
+  span, img {
+    height: 33px !important;
+    width: 33px !important;
+  }
+}
 }
