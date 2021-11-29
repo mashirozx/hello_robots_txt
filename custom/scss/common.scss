@@ -130,3 +130,83 @@ canvas.media-gallery__preview,
   font-size: 18px;
   bottom: 0;
 }
+
+
+/* hide illustrate in web/start */
+.layout-multiple-columns .column-actions__background {
+  display: none;
+}
+
+/* fix trends in advanced UI */
+.layout-single-column[class*="theme-transparent-"]
+  .columns-area__panels__pane__inner {
+  overflow: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.layout-single-column[class*="theme-transparent-"] .getting-started__trends {
+  background: #282828;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+.layout-single-column[class*="theme-transparent-"] .navigation-panel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.getting-started__trends {
+  display: block;
+}
+
+.getting-started__trends .trends__item:nth-child(n) {
+  display: flex;
+}
+
+@media only screen and (min-width: 920px) {
+  section.emoji-mart {
+    width: 696px !important;
+  }
+  .emoji-mart-scroll {
+    height: 570px !important;
+  }
+  .emoji-mart-bar:last-child {
+    right: -125px !important;
+    box-shadow: 4px 4px 6px rgb(0 0 0 / 40%);
+    height: 130px;
+    top: calc(50% - 65px);
+  }
+}
+
+.drawer__tab[href="/auth/sign_out"] {
+  display: none;
+}
+
+@media only screen and (max-width: 625px) {
+  .emoji-picker-dropdown__menu {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    top: unset !important;
+    width: 100% !important;
+  }
+  
+  .emoji-picker-dropdown__menu .emoji-mart {
+    width: 100% !important;
+  }
+}
+
+.emoji-mart-category .emoji-mart-emoji.emoji-mart-emoji-custom img {pointer-events: none}
+
+.emoji-mart-category .emoji-mart-emoji:hover::before{background-color: #f4f4f4 !important;}
+
+.emoji-mart-search input[type="search"] {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
