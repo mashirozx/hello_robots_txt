@@ -19,7 +19,7 @@
 .hashtag.status-link:before,
 .status-public .hashtag:before {
   content: "\f02c";
-  font-family: 'Font Awesome 5 Pro';
+  font-family: "Font Awesome 5 Pro";
   font-weight: 900;
 }
 
@@ -30,12 +30,12 @@
 
 // preview bg
 /*.spoiler-button:not(.spoiler-button--minified) {
-  background-image: url(/aws/static/d4c.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #f6f3ed;
-}*/
+    background-image: url(/aws/static/d4c.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f6f3ed;
+  }*/
 
 // unavailable bg
 canvas.media-gallery__preview,
@@ -67,15 +67,14 @@ canvas.media-gallery__preview,
 // local timeline icon
 // advinced ui top left
 .drawer__header .drawer__tab,
-// advinced ui right
-.getting-started__wrapper .column-link,
-// local TL title
-.column-header__wrapper .column-header button,
-// mobile
-.tabs-bar .tabs-bar__link,
-// default ui right
-.columns-area__panels__pane__inner .navigation-panel .column-link:nth-child(3) {
-
+  // advinced ui right
+  .getting-started__wrapper .column-link,
+  // local TL title
+  .column-header__wrapper .column-header button,
+  // mobile
+  .tabs-bar .tabs-bar__link,
+  // default ui right
+  .columns-area__panels__pane__inner .navigation-panel .column-link:nth-child(3) {
   .fa-users::before {
     content: "\f1bb";
   }
@@ -84,34 +83,36 @@ canvas.media-gallery__preview,
 // fed timeline icon
 // advinced ui top left
 .drawer__header .drawer__tab,
-// advinced ui right
-.getting-started__wrapper .column-link,
-// fed TL title
-.column-header__wrapper .column-header button,
-// mobile
-.tabs-bar .tabs-bar__link,
-// default ui right
-.columns-area__panels__pane__inner .navigation-panel .column-link:nth-child(4) {
-
+  // advinced ui right
+  .getting-started__wrapper .column-link,
+  // fed TL title
+  .column-header__wrapper .column-header button,
+  // mobile
+  .tabs-bar .tabs-bar__link,
+  // default ui right
+  .columns-area__panels__pane__inner .navigation-panel .column-link:nth-child(4) {
   .fa-globe::before {
     content: "\f7a3";
   }
 }
 
 /*
- * fixup quotation layout
- */
-.quote-status .status__content p:nth-child(2),
-.quote-status .status__content p:nth-last-child(2) {
-  margin-top: 0;
-}
-
-.quote-status .status-card{
-  margin: 5px -5px -5px -5px;
-  border-radius: 0 0 4px 4px;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+   * fixup quotation layout
+   */
+.quote-status {
+  .status__content p {
+    &:nth-child(2),
+    &:nth-last-child(2) {
+      margin-top: 0;
+    }
+  }
+  .status-card {
+    margin: 5px -5px -5px -5px;
+    border-radius: 0 0 4px 4px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
 }
 
 .detailed-status .quote-status .status__content {
@@ -119,18 +120,16 @@ canvas.media-gallery__preview,
 }
 
 /*
- * about/more video component
- */
+   * about/more video component
+   */
 .rich-formatting .about-more-video {
   padding: inherit !important;
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    bottom: 0;
+  }
 }
-
-.rich-formatting .about-more-video a {
-  text-decoration: none;
-  font-size: 18px;
-  bottom: 0;
-}
-
 
 /* hide illustrate in web/start */
 .layout-multiple-columns .column-actions__background {
@@ -138,31 +137,29 @@ canvas.media-gallery__preview,
 }
 
 /* fix trends in advanced UI */
-.layout-single-column[class*="theme-transparent-"]
+.layout-single-column[class*="theme-transparent-"] {
   .columns-area__panels__pane__inner {
-  overflow: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.layout-single-column[class*="theme-transparent-"] .getting-started__trends {
-  background: #282828;
-  color: #fff;
-  padding-top: 10px;
-  margin-top: 0;
-}
-
-.layout-single-column[class*="theme-transparent-"] .navigation-panel {
-  margin-top: 0;
-  margin-bottom: 0;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .getting-started__trends {
+    background: #282828;
+    color: #fff;
+    padding-top: 10px;
+    margin-top: 0;
+  }
+  .navigation-panel {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .getting-started__trends {
   display: block;
-}
-
-.getting-started__trends .trends__item:nth-child(n) {
-  display: flex;
+  .trends__item:nth-child(n) {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 920px) {
@@ -191,16 +188,20 @@ canvas.media-gallery__preview,
     left: 0 !important;
     top: unset !important;
     width: 100% !important;
-  }
-  
-  .emoji-picker-dropdown__menu .emoji-mart {
-    width: 100% !important;
+    .emoji-mart {
+      width: 100% !important;
+    }
   }
 }
 
-.emoji-mart-category .emoji-mart-emoji.emoji-mart-emoji-custom img {pointer-events: none}
-
-.emoji-mart-category .emoji-mart-emoji:hover::before{background-color: #f4f4f4 !important;}
+.emoji-mart-category .emoji-mart-emoji {
+  &.emoji-mart-emoji-custom img {
+    pointer-events: none;
+  }
+  &:hover::before {
+    background-color: #f4f4f4 !important;
+  }
+}
 
 .emoji-mart-search input[type="search"] {
   &::-webkit-search-decoration,
