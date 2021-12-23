@@ -36,6 +36,7 @@ jobs:
           source: custom/scss/index.scss
           destination: public/custom/css/index.css
           sourceMap: true
+          sourceMapEmbed: true
 
       - name: 🎭 [1/2]. Copy robots.txt to public path
         run: cp robots.txt public
