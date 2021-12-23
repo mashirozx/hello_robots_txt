@@ -40,7 +40,7 @@ jobs:
         run: npm install -g sass
 
       - name: 📃 [1/1]. Compile index.css from index.scss
-        run: sass custom/scss/index.scss public/custom/css/index.css --source-map --style compressed
+        run: sass custom/scss/index.scss public/custom/css/index.css --source-map --embed-sources --style compressed
 #         uses: gha-utilities/sass-build@v0.4.8
 #         with:
 #           source: custom/scss/index.scss
