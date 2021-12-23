@@ -29,14 +29,24 @@ jobs:
 
       - name: 📂 Make destination directory for compiled CSS
         run: mkdir -vp public/custom/css
+        
+      - name: 🔧 Prepare Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+          
+      - name: 🔧 Install sass
+        run: npm install -g sass
 
       - name: 📃 [1/1]. Compile index.css from index.scss
-        uses: gha-utilities/sass-build@v0.4.8
-        with:
-          source: custom/scss/index.scss
-          destination: public/custom/css/index.css
-          sourceMap: true
-          sourceMapEmbed: true
+        run: sass custom/scss/index.scss public/custom/css/index.css --source-map
+#         uses: gha-utilities/sass-build@v0.4.8
+#         with:
+#           source: custom/scss/index.scss
+#           destination: public/custom/css/index.css
+#           sourceMap: true
+#           sourceMapEmbed: true
 
       - name: 🎭 [1/2]. Copy robots.txt to public path
         run: cp robots.txt public
