@@ -21,8 +21,7 @@ $custom-emoji-scale-duration: .3s;
   &[title^=":rilakkuma_"],
   &[title^=":mochabear_"],
   &[title^=":milkbear_"],
-  &[title^=":umaru_chan_"],
-  &[title^=":Cinnamoroll"] {
+  &[title^=":umaru_chan_"] {
     height: $custom-emoji-size-enhance;
     width: $custom-emoji-size-enhance;
   }
@@ -36,7 +35,8 @@ $custom-emoji-scale-duration: .3s;
   &[title^=":ak_"],
   &[title^=":princess_"],
   &[title^=":bangdream_"],
-  &[title^=":pcr_"] {
+  &[title^=":pcr_"],
+  &[title^=":Cinnamoroll"] {
     height: $custom-emoji-size-medium;
     width: $custom-emoji-size-medium;
   }
