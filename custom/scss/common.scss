@@ -99,25 +99,25 @@ canvas.media-gallery__preview,
 /*
    * fixup quotation layout
    */
-.quote-status {
-  .status__content p {
-    &:nth-child(2),
-    &:nth-last-child(2) {
-      margin-top: 0;
-    }
-  }
-  .status-card {
-    margin: 5px -5px -5px -5px;
-    border-radius: 0 0 4px 4px;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-  }
-}
+// .quote-status {
+//   .status__content p {
+//     &:nth-child(2),
+//     &:nth-last-child(2) {
+//       margin-top: 0;
+//     }
+//   }
+//   .status-card {
+//     margin: 5px -5px -5px -5px;
+//     border-radius: 0 0 4px 4px;
+//     border-left: none;
+//     border-right: none;
+//     border-bottom: none;
+//   }
+// }
 
-.detailed-status .quote-status .status__content {
-  font-size: 15px;
-}
+// .detailed-status .quote-status .status__content {
+//   font-size: 15px;
+// }
 
 /*
    * about/more video component
