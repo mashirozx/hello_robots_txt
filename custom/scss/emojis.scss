@@ -38,7 +38,6 @@ $custom-emoji-scale-duration: .3s;
   &[title^=":princess_"],
   &[title^=":bangdream_"],
   &[title^=":pcr_"],
-  &[title^=":unlovely_tutu_"],
   &[title^=":Cinnamoroll"] {
     height: $custom-emoji-size-medium;
     width: $custom-emoji-size-medium;
@@ -46,6 +45,7 @@ $custom-emoji-scale-duration: .3s;
 
   // large stickers
   &[title^=":genshin_"],
+  &[title^=":unlovely_tutu_"],
   &[title^=":menhera_"][title$="_EN:"] {
     height: $custom-emoji-size-large;
     width: $custom-emoji-size-large;
