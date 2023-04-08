@@ -53,19 +53,29 @@ jobs:
 
       - name: 🎭 [2/2]. Copy custom/img to public path
         run: cp -r custom/img public/custom
+        
+#       - name: 🔄 Sync with S3
+#         uses: keithweaver/aws-s3-github-action@v1.0.0
+#         with:
+#           command: cp
+#           source: ./local_file.txt
+#           destination: s3://yourbucket/folder/local_file.txt
+#           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws_region: us-east-1
 
-      #- name: 🚀 Deploy on gh-pages branch
-      #  #uses: JamesIvJamesIves/githubJamesIves/github-pages-deploy-action@releases/v3
-      #  uses: JamesIves/github-pages-deploy-action@3.5.7
-      #  with:
-      #    ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #    BRANCH: gh-pages
-      #    FOLDER: public
+#       - name: 🚀 Deploy on gh-pages branch
+#        #uses: JamesIvJamesIves/githubJamesIves/github-pages-deploy-action@releases/v3
+#        uses: JamesIves/github-pages-deploy-action@3.5.7
+#        with:
+#          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#          BRANCH: gh-pages
+#          FOLDER: public
 
       - name: 🔄 Sync with S3
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --acl private --follow-symlinks --delete
+          args: --acl public --follow-symlinks --delete
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_S3_ENDPOINT: ${{ secrets.AWS_S3_ENDPOINT }}
