@@ -45,6 +45,7 @@ $custom-emoji-scale-duration: .3s;
 
   // large stickers
   &[title^=":genshin_"],
+  &[title^=":SR_"],
   &[title^=":unlovely_tutu_"],
   &[title^=":menhera_"][title$="_EN:"] {
     height: $custom-emoji-size-large;
